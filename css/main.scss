@@ -1,3 +1,7 @@
-body {
-    background-color: #777;
-}
+$green: #90d23d;
+$gray: #4b4d4f;
+
+
+@import 'helpers/_setup.scss';
+@import 'sass/_welcome.scss';
+@import 'sass/_day-activities.scss';
