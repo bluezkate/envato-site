@@ -14,7 +14,6 @@
     background-image: url('../img/logo__img.png');
     width: 230px;
     height: 62px;
-    display: inline-block;
 }
 
 .navigation__links {
@@ -30,7 +29,6 @@
 }
 
 .welcome__countdown {
-    height: 650px;
     background-color: $gray;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
@@ -98,7 +96,7 @@
     height: 245px;
     width: 693px;
     position: relative;
-    top: 90px;
+    top: 30px;
     right: 55px;
 }
 
