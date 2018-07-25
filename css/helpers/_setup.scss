@@ -28,6 +28,15 @@ button {
     cursor: pointer;
 }
 
+.button_simple {
+    width: 200px;
+    height: 55px;
+    border-style: none;
+    border-radius: 20px;
+    outline: none;
+    color: #fff;
+}
+
 .container {
     width: 1030px;
     margin: 0 auto;

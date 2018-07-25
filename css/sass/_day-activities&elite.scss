@@ -1,0 +1,227 @@
+.day-activities__topics {
+    display: flex;
+    justify-content: space-between;
+}
+
+.day-activities__topic {
+    width: 310px;
+    margin-bottom: 100px;
+}
+
+.community {
+
+    &__img{
+        width: 200px;
+        height: 210px;
+        background-image: url('/img/community__img.png');
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+
+    &__heading {
+        color: #242424;
+        font-size: 34px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        color: #777777;
+        text-align: center;
+        font-weight: 300;
+        margin: 0;
+    }
+}
+
+.talk-shop {
+
+    &__img{
+        width: 200px;
+        height: 210px;
+        background-image: url('/img/talk-shop__img.png');
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+
+    &__heading {
+        color: #242424;
+        font-size: 34px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        color: #777777;
+        text-align: center;
+        font-weight: 300;
+        margin: 0;
+    }
+
+}
+
+.war-stories {
+
+    &__img{
+        width: 200px;
+        height: 210px;
+        background-image: url('/img/war-stories__img.png');
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+
+    &__heading {
+        color: #242424;
+        font-size: 34px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        color: #777777;
+        text-align: center;
+        font-weight: 300;
+        margin: 0;
+    }
+
+}
+
+.table{
+
+    margin-bottom: 30px;
+
+    &__item {
+        color: #fff;
+        font-size: 22px;
+        padding: 25px 45px;
+        display: flex;
+        justify-content: space-between;
+
+        &:nth-child(2n+2) {
+            background-color:  #373737;
+        }
+
+        &:nth-child(2n+1) {
+            background-color: #4b4d4f;
+        }
+
+        &:nth-child(n+5) {
+            -webkit-border-bottom-right-radius: 20px;
+            -webkit-border-bottom-left-radius: 20px;
+            -moz-border-radius-bottomright: 20px;
+            -moz-border-radius-bottomleft: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+    }
+
+    &__time {
+        width: 130px;
+        padding-top: 4px;
+    }
+
+    &__event {
+        width: 534px;
+        padding-top: 4px;
+    }
+
+    &__add{
+        width: 33px;
+        height: 33px;
+        background-image: url('../img/button_add.png');
+        background-color: rgba(0,0,0,0);
+        border-style: none;
+        background-repeat: no-repeat;
+        outline: none;
+        padding: 0 22px
+    }
+
+}
+
+.head {
+
+    background-color: #a3cc40;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    padding: 23px 45px;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-topright: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    &__time {
+        margin-left: 30px;
+    }   
+
+    &__event {
+        margin-left: 139px;
+    }  
+}
+
+.day-activities__info {
+    display: flex;
+    justify-content: center;
+}
+
+.day-activities__text {
+    color: #545454;
+    text-align: center;
+    width: 830px;
+    padding-bottom: 100px;
+}
+
+
+
+.elite {
+    background-color: #4b4d4f;
+    padding: 170px 0;
+    -webkit-clip-path: polygon(0 18%, 100% 0%, 100% 82%, 0% 100%);
+    clip-path: polygon(0 18%, 100% 0%, 100% 82%, 0% 100%);
+    margin-bottom: 150px;
+}
+
+.elite__logo {
+    position: relative;
+}
+
+.elite__logo-img {
+    width: 342px;
+    height: 350px;
+    background-image: url('../img/elite__img.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    top: -30px;
+
+}
+
+.elite__reward {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.elite__message {
+    width: 700px;
+    text-align: right;
+    color: #fff;
+}
+
+.elite__heading {
+    font-size: 50px;
+    margin-top: 0;
+}
+
+.elite__message {
+    font-size: 16px;;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.elite__button {
+    margin-top: 20px;
+    background-color: $green;
+    font-size: 18px;;
+}

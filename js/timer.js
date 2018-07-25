@@ -5,7 +5,7 @@
 
 
 function initializeTimer() {
-	var endDate = new Date(2018,7,15); // получаем дату истечения таймера
+	var endDate = new Date(2018,7,20); // получаем дату истечения таймера
 	var currentDate = new Date(); // получаем текущую дату
 	console.log(currentDate);
 	var seconds = (endDate-currentDate) / 1000; // определяем количество секунд до истечения таймера
@@ -13,9 +13,12 @@ function initializeTimer() {
 		var minutes = seconds/60; // определяем количество минут до истечения таймера
 		var hours = minutes/60; // определяем количество часов до истечения таймера
 		var days = hours/24;
+		seconds = Math.floor((minutes - Math.floor(minutes)) * 60); // подсчитываем кол-во оставшихся секунд в текущей минуте
+		if (seconds < 10) {
+			seconds = '0' + seconds;
+		}
 		minutes = (hours - Math.floor(hours)) * 60; // подсчитываем кол-во оставшихся минут в текущем часе
 		hours = (days - Math.floor(days)) * 24; // целое количество часов до истечения таймера
-		seconds = Math.floor((minutes - Math.floor(minutes)) * 60); // подсчитываем кол-во оставшихся секунд в текущей минуте
 		minutes = Math.floor(minutes); // округляем до целого кол-во оставшихся минут в текущем часе
 		hours = Math.floor(hours);
 		days = Math.floor(days);

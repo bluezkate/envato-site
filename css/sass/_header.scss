@@ -1,17 +1,19 @@
+
 .navigation {
     background-color: $gray;
-    padding: 37px 51px 37px 70px;
+    padding: 37px 0px;
 }
 
 .navigation__elements{
-    width: 1020px;
-    height: 80px;
+    width: 1030px;
+    // height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .navigation__logo{
     background-image: url('../img/logo__img.png');
+    background-repeat: no-repeat;
     width: 230px;
     height: 62px;
 }
@@ -19,18 +21,26 @@
 .navigation__links {
     display: flex;
     flex-direction: row; 
+    list-style-type: none;
 }
 
 .navigation__link {
     text-transform: uppercase;
     padding: 30px 0 30px 40px;
+    margin: 0;
     font-weight: 300;
     font-size: 15px;
+    display: inline-block;
+}
+
+.welcome {
+    margin-bottom: 140px;
+
 }
 
 .welcome__countdown {
     background-color: $gray;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
 }
 
@@ -55,12 +65,14 @@
     border: solid $green 1px;
     border-radius: 20px;
     position: relative;
+    display: flex;
+    justify-content: space-between;
 
     &__element{
         color: #fff;
-        padding: 0 30px;
-        width: 200px;
-        height: 200px;
+        padding: 0px;
+        margin: 0;
+        width: 150px;
         
         &:nth-child(-n+5){
 
@@ -79,14 +91,12 @@
 
     &__numbers{
         font-size: 120px;
-        
     }
 
     &__letters{
         text-transform: uppercase;
         font-weight: 600;
         font-size: 20px;
-        margin-top: 0;
     }
 
 }
@@ -101,9 +111,6 @@
 }
 
 .welcome__message {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 70px;
 
     &-inner {
         position: relative;
@@ -133,7 +140,6 @@
 }
 
 .welcome__signup {
-    height: 530px;
     width: 430px;
     position: absolute;
     z-index: 100;
@@ -149,11 +155,12 @@
 
     display: flex;
     justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
     
 
     &__headline {
         font-size: 30px;
-        padding-top: 10px;
         text-align: center;
         color: #252525;
         margin: 20px 0 20px 0;
@@ -200,7 +207,7 @@
     }
 
     &__ad{
-        margin-top: 0;
+        margin: 0;
         text-align: center;
         color: #b0b0b0;
         font-weight: 300;
