@@ -1,3 +1,18 @@
+@font-face {
+    font-family: RobotoSlab;
+    src: url(../fonts/roboto-slab.regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoSlabLight;
+    src: url(../fonts/roboto-slab.light.ttf);
+}
+
+@font-face {
+    font-family: RobotoSlabThin;
+    src: url(../fonts/roboto-slab.thin.ttf);
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -14,6 +29,6 @@ button {
 }
 
 .container {
-    width: 1170px;
+    width: 1030px;
     margin: 0 auto;
 }
