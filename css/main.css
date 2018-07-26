@@ -470,7 +470,7 @@ button {
   padding: 170px 0;
   -webkit-clip-path: polygon(0 18%, 100% 0%, 100% 82%, 0% 100%);
   clip-path: polygon(0 18%, 100% 0%, 100% 82%, 0% 100%);
-  margin-bottom: 150px;
+  margin-bottom: 120px;
 }
 
 .elite__logo {
@@ -553,14 +553,74 @@ button {
   background-color: #90d23d;
   border-radius: 20px;
   margin-bottom: 40px;
+  position: relative;
+}
+
+.speakers__card:hover {
+  background-image: url("../img/bg__pattern.png");
+  background-color: #46c309;
 }
 
 .speakers__card:nth-child(5) {
   background-image: url("../img/speakers__img.png");
-  width: 236px;
-  height: 236px;
+  background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
-  margin-top: 35px;
+}
+
+.speakers__card:hover .card__content {
+  display: block;
+}
+
+.card__content {
+  color: #fff;
+  padding: 30px 35px;
+  display: none;
+}
+
+.card__heading {
+  font-size: 45px;
+  line-height: 45px;
+  margin: 0;
+}
+
+.card__text {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.card__link {
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/button__speakers_sprite.png");
+  background-repeat: no-repeat;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.card__tw {
+  background-position: -35px 0;
+}
+
+.card__be {
+  background-position: -75px 0;
+}
+
+.card__sm {
+  background-position: -115px 0;
 }
 /*# sourceMappingURL=main.css.map */

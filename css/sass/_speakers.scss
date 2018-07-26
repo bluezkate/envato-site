@@ -27,13 +27,73 @@
     background-color: $green;
     border-radius: 20px;
     margin-bottom: 40px;
+    position: relative;
+
+    &:hover{
+        background-image: url('../img/bg__pattern.png');
+        background-color: #46c309;
+    }
 
     &:nth-child(5) {
         background-image: url('../img/speakers__img.png');
-        width: 236px;
-        height: 236px;
+        background-position: center;
         background-color: transparent;
         background-repeat: no-repeat;
-        margin-top: 35px;
+    }
+}
+
+.speakers__card:hover .card__content{
+    display: block;
+}
+
+.card {    
+
+    &__content {
+        color: #fff;
+        padding: 30px 35px;
+        display: none;
+    }
+
+
+
+    &__heading{
+        font-size: 45px;
+        line-height: 45px; 
+        margin: 0;
+    }
+
+    &__text {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: row; 
+        list-style-type: none;
+        cursor: pointer;
+    }
+
+    &__link {
+        width: 35px;
+        height: 35px;
+        background-image: url('../img/button__speakers_sprite.png');
+        background-repeat: no-repeat;
+        padding: 0;
+        margin-right: 10px;  
+    }
+
+    &__tw {
+        background-position: -35px 0;
+    }
+
+    &__be {
+        background-position: -75px 0;
+    }
+
+    &__sm {
+        background-position: -115px 0;
     }
 }
