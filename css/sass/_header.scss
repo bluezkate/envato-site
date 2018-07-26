@@ -12,7 +12,6 @@
     align-items: center;
 }
 .navigation__logo{
-    background-image: url('../img/logo__img.png');
     background-repeat: no-repeat;
     width: 230px;
     height: 62px;
@@ -153,9 +152,10 @@
 
 .signup {
 
+    width: 430px;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
     box-sizing: border-box;
     
 
@@ -167,43 +167,14 @@
     }
 
     &__input {
-        height: 50px;
-        width: 355px;
+        width: 370px;
         margin-bottom: 20px;
-        border-radius: 5px;
-        border: solid 1px #bebebe;
-        outline: none;
-        padding-left: 15px;
-        font-family: 'Roboto';
-
-        &:focus {
-            border: solid 1px #90d23d;
-            font-family: 'Roboto';
-            font-weight: 300;
-            font-size: 19px;
-        }
-
-        &::placeholder {
-            color: #bebebe;
-            font-size: 19px;
-            position: relative;
-            top: 2px;
-            font-weight: 300;
-        }
     }
 
     &__button {
         height: 58px;
         width: 370px;
-        margin: 20px 0 20px 0;
-        // margin-bottom: 20px;
-        border: none;
-        border-radius: 5px;
         background-color: #90d23d;
-        color: #fff;
-        font-size: 20px;
-        font-weight: bold;
-        outline: none;
     }
 
     &__ad{
@@ -214,3 +185,4 @@
 
     }
 }
+

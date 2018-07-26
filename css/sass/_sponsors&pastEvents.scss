@@ -1,0 +1,115 @@
+.sponsors {
+    background-color: $gray;
+    color: #fff;
+    padding: 110px 0 120px 0;
+    margin-bottom: 100px;
+    -webkit-clip-path: polygon(0 18%, 100% 0%, 100% 82%, 0% 100%);
+    clip-path: polygon(0 18%, 100% 0%, 100% 82%, 0% 100%);
+}
+
+.sponsors__main {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sponsors__heading{
+    margin-bottom: 30px;
+}
+
+.sponsors__text {
+    font-weight: 300;
+    line-height: 18px;
+    width: 630px;
+    margin: 0 auto;
+}
+
+.sponsors__companies {
+    width: 600px;
+    height: 76px;
+    margin: 50px auto 60px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sponsors__company {
+    align-self: flex-end;
+
+    &-2 {
+        margin-right: 20px;
+    }
+
+    &-3 {
+        margin-top: 25px;
+    }
+}
+
+// Пришлось делать лого через img, потому что через background-image 
+// отдельно вставляться они отказывались
+
+.sponsors__button {
+    background-color: $green;
+    font-size: 22px;
+}
+
+
+.past-events__container {
+    width: 1170px;
+    margin-bottom: 93px;
+}
+
+.past-events__message{
+    width: 930px;
+    margin: 0 auto 100px auto;
+}
+
+.past-events__heading {
+    margin-bottom: 30px;
+}
+
+.past-events__text {
+    width: 600px;
+    font-weight: 300;
+}
+
+.past-events__gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 95px;
+}
+
+.past-events__img {
+
+    &-1 {
+        width: 600px;
+        height: 415px;
+        background-color: #3d6ed2;
+    }
+
+    &-2 {
+        width: 570px;
+        height: 415px;
+        background-color: #90d23d;
+    }
+
+    &-3 {
+        width: 500px;
+        height: 365px;
+        background-color: #ff9d00;
+    }
+
+    &-4 {
+        width: 670px;
+        height: 365px;
+        background-color: #e0652a;
+    }
+}
+
+.past-events__viewMore {
+    display: flex;
+    justify-content: center;
+}
+
+.past-events__button {
+    background-color: #373737;
+    font-size: 22px;
+}

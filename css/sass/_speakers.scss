@@ -1,3 +1,7 @@
+.speakers {
+    margin-bottom: 100px;
+}
+
 .speakers__heading {
     margin: 25px 0;
 
@@ -44,6 +48,7 @@
 
 .speakers__card:hover .card__content{
     display: block;
+    cursor: pointer;
 }
 
 .card {    

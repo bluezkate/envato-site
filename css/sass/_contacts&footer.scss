@@ -1,0 +1,91 @@
+.contacts {
+    padding: 66px 0;
+}
+
+.container__contacts{
+    width: 1170px;
+}
+
+.contacts {
+    background-image: url('../img/bg__map.jpg');
+}
+
+.contacts__main {
+    width: 970px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 70px;
+    margin: 0 auto;
+}
+
+.contacts__adress {
+    margin: 30px 40px 40px 40px;
+}
+
+.contacts__logo {
+    background-image: url('../img/contacts__img.png');
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contacts__text {
+    width: 270px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.contacts__button {
+    background-color: $green;
+    font-size: 22px;
+    margin-left: 33px;
+    margin-top: 10px;
+}
+
+.contacts__send-message {
+    width: 400px;
+}
+
+.contacts__input {
+    width: 400px;
+    margin-bottom: 28px;
+}
+
+.contacts__textArea {
+    width: 400px;
+    height: 253px;
+    margin-bottom: 28px;
+    border-radius: 5px;
+    border: solid 1px #bebebe;
+    outline: none;
+    padding: 15px;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    resize: none;
+
+
+    &:focus {
+        border: solid 1px #90d23d;
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-size: 19px;
+    }
+
+    &::placeholder {
+        color: #bebebe;
+        font-size: 19px;
+        position: relative;
+        top: 2px;
+        font-weight: 300;
+    }
+}
+
+.contacts__button_form {
+    width: 400px;
+    height: 61px;
+    background-color: #373737;
+    font-size: 22px;
+    margin: 0;
+}

@@ -36,9 +36,44 @@ button {
     width: 200px;
     height: 55px;
     border-style: none;
-    border-radius: 20px;
+    border-radius: 15px;
     outline: none;
     color: #fff;
+}
+
+.button_form {
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+}
+
+.input {
+    height: 50px;
+    border-radius: 5px;
+    border: solid 1px #bebebe;
+    outline: none;
+    padding: 0 15px;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+
+    &:focus {
+        border: solid 1px #90d23d;
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-size: 19px;
+    }
+
+    &::placeholder {
+        color: #bebebe;
+        font-size: 19px;
+        position: relative;
+        top: 2px;
+        font-weight: 300;
+    }
 }
 
 .container {

@@ -6,18 +6,5 @@ $gray: #4b4d4f;
 @import 'sass/_header.scss';
 @import 'sass/_day-activities&elite';
 @import 'sass/_speakers.scss';
-
-
-
-
-// background-color: #46be09;
-// background-image: url("https://www.transparenttextures.com/patterns/psychedelic.png");
-
-// background-color: #46be09;
-// background-image: url("https://www.transparenttextures.com/patterns/soft-circle-scales.png");
-
-// background-color: #46be09;
-// background-image: url("https://www.transparenttextures.com/patterns/stacked-circles.png");
-
-// background-color: #46be09;
-// background-image: url("https://www.transparenttextures.com/patterns/triangles.png");
+@import 'sass/_sponsors&pastEvents.scss';
+@import 'sass/_contacts&footer.scss';
