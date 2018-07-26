@@ -29,22 +29,31 @@
     margin: 50px auto 60px auto;
     display: flex;
     justify-content: space-between;
+
 }
 
 .sponsors__company {
-    align-self: flex-end;
+    // align-self: flex-end;
+    background-image: url('../img/sponsors__logo_sprite.png');
+    background-repeat: no-repeat;
+
+    &-1{
+        width: 178px;
+        height: 69px;
+    }
 
     &-2 {
-        margin-right: 20px;
+        background-position: -255px 0;
+        width: 95px;
+        height: 75px;
     }
 
     &-3 {
-        margin-top: 25px;
+        background-position: -425px 0;
+        width: 153px;
+        height: 58px;
     }
 }
-
-// Пришлось делать лого через img, потому что через background-image 
-// отдельно вставляться они отказывались
 
 .sponsors__button {
     background-color: $green;

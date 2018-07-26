@@ -193,6 +193,9 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .timer__element {
@@ -202,13 +205,31 @@ button {
   width: 150px;
 }
 
-.timer__element:nth-child(-n+5)::after {
+.timer__element:nth-child(1)::after {
+  content: ':';
+  font-size: 100px;
+  display: inline-block;
+  position: absolute;
+  bottom: 55px;
+  margin-left: 75px;
+}
+
+.timer__element:nth-child(3)::after {
   content: ':';
   font-size: 100px;
   display: inline-block;
   position: absolute;
   bottom: 55px;
   margin-left: 60px;
+}
+
+.timer__element:nth-child(5)::after {
+  content: ':';
+  font-size: 100px;
+  display: inline-block;
+  position: absolute;
+  bottom: 55px;
+  margin-left: 50px;
 }
 
 .timer__numbers {
@@ -218,7 +239,7 @@ button {
 .timer__letters {
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .welcome__people {
@@ -675,16 +696,25 @@ button {
 }
 
 .sponsors__company {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  background-image: url("../img/sponsors__logo_sprite.png");
+  background-repeat: no-repeat;
+}
+
+.sponsors__company-1 {
+  width: 178px;
+  height: 69px;
 }
 
 .sponsors__company-2 {
-  margin-right: 20px;
+  background-position: -255px 0;
+  width: 95px;
+  height: 75px;
 }
 
 .sponsors__company-3 {
-  margin-top: 25px;
+  background-position: -425px 0;
+  width: 153px;
+  height: 58px;
 }
 
 .sponsors__button {
@@ -876,5 +906,76 @@ button {
   background-color: #373737;
   font-size: 22px;
   margin: 0;
+}
+
+.social {
+  background-color: #90d23d;
+  padding: 60px 0 45px 0;
+}
+
+.social__text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.social__text-p {
+  margin: 0;
+}
+
+.social__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.social__link {
+  background-image: url("../img/button_social_sprite.png");
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.social__tw {
+  background-position: -61px 0;
+}
+
+.social__li {
+  background-position: -121px 0;
+}
+
+.social__gp {
+  background-position: -181px 0;
+}
+
+.social__tu {
+  background-position: -240px 0;
+}
+
+.social__link-top {
+  width: 31px;
+  height: 19px;
+  background-image: url("../img/button_up.png");
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+}
+
+.social__link-top-main {
+  position: relative;
+  right: -80px;
+  bottom: 60px;
 }
 /*# sourceMappingURL=main.css.map */

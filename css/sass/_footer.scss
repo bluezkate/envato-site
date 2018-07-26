@@ -89,3 +89,68 @@
     font-size: 22px;
     margin: 0;
 }
+
+
+.social {
+    background-color: $green;
+    padding: 60px 0 45px 0;
+}
+
+.social__text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+
+    &-p{
+        margin: 0;
+    }
+}
+
+.social__buttons {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.social__link {
+    background-image: url('../img/button_social_sprite.png');
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.social {
+
+    &__tw{
+        background-position: -61px 0;  
+    }
+    &__li{
+        background-position: -121px 0; 
+    }
+    &__gp{
+        background-position: -181px 0
+    }
+    &__tu{
+        background-position: -240px 0
+    }
+
+    &__link-top {
+        width: 31px;
+        height: 19px;
+        background-image: url('../img/button_up.png');
+        position: absolute;
+        right: 0px;
+        cursor: pointer;
+    }
+}
+
+.social__link-top-main {
+    position: relative;
+    right: -80px;
+    bottom: 60px;
+}
