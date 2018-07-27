@@ -32,6 +32,14 @@ button {
   cursor: pointer;
 }
 
+button:active {
+  transform: translate(0px, 3px);
+  -webkit-transform: translate(0px, 3px);
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1 ease-in-out;
+}
+
 .button_simple {
   width: 200px;
   height: 55px;
@@ -49,6 +57,15 @@ button {
   font-size: 20px;
   font-weight: bold;
   outline: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 .input {
@@ -507,8 +524,8 @@ button {
 }
 
 .elite__logo-img {
-  width: 342px;
-  height: 350px;
+  width: 355px;
+  height: 355px;
   background-image: url("../img/elite__img.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -638,24 +655,34 @@ button {
 }
 
 .card__link {
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   background-image: url("../img/button__speakers_sprite.png");
   background-repeat: no-repeat;
   padding: 0;
   margin-right: 10px;
+  border-radius: 50px;
+}
+
+.card__link:hover, .card__link:active {
+  -webkit-box-shadow: 0px 0px 33px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 33px -2px rgba(0, 0, 0, 0.75);
+}
+
+.card__fb {
+  background-position: 1px 0;
 }
 
 .card__tw {
-  background-position: -35px 0;
+  background-position: -37px 0;
 }
 
 .card__be {
-  background-position: -75px 0;
+  background-position: -78px 0;
 }
 
 .card__sm {
-  background-position: -115px 0;
+  background-position: -116px 0;
 }
 
 .sponsors {
@@ -798,6 +825,7 @@ button {
 
 .contacts {
   background-image: url("../img/bg__map.jpg");
+  background-size: cover;
 }
 
 .contacts__main {
@@ -941,27 +969,37 @@ button {
 
 .social__link {
   background-image: url("../img/button_social_sprite.png");
-  height: 50px;
-  width: 50px;
+  height: 46px;
+  width: 46px;
   background-repeat: no-repeat;
   padding: 0;
   margin-right: 10px;
+  border-radius: 50px;
+}
+
+.social__link:hover, .social__link:active {
+  -webkit-box-shadow: 0px 0px 33px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 33px -2px rgba(0, 0, 0, 0.75);
+}
+
+.social__fb {
+  background-position: -3px 0;
 }
 
 .social__tw {
-  background-position: -61px 0;
+  background-position: -64px 0;
 }
 
 .social__li {
-  background-position: -121px 0;
+  background-position: -124px 0;
 }
 
 .social__gp {
-  background-position: -181px 0;
+  background-position: -184px 0;
 }
 
 .social__tu {
-  background-position: -240px 0;
+  background-position: -244px 0;
 }
 
 .social__link-top {
